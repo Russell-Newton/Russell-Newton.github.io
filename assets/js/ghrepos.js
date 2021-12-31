@@ -27,7 +27,7 @@
             repoCard.innerHTML = `<img src="${baseSvgRef}/${repo.title}.svg">`;
             repoSection.appendChild(repoCard);
 
-            document.getElementByID("repos").appendChild(repoSection);
+            document.getElementById("repos").appendChild(repoSection);
         }
     });
 })(jQuery);
