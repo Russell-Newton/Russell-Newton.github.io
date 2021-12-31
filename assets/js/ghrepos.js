@@ -20,7 +20,7 @@
             repoCard.href = `${baseHref}/${repo.repo}`;
             repoCard.target = "_blank";
             repoCard.rel = "noopener noreferrer";
-            repoCard.innerHTML = `<img src="${baseSvgRef}/${repo.title}.svg" width="100%">`;
+            repoCard.innerHTML = `<img src="${baseSvgRef}/${repo.repo}.svg" width="100%">`;
             repoSection.appendChild(repoCard);
 
             let repoDesc = document.createElement("p");
