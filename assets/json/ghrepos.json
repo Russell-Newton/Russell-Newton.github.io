@@ -1,0 +1,24 @@
+{
+  "repos": [
+    {
+      "repo": "StatiCat",
+      "title": "StatiCat",
+      "blurb": [
+        "A custom Discord bot developed in Python featuring various technologies including http requests, html scraping, image manipulation, at-runtime module loading, advanced class creation, and custom decorators."
+      ]
+    },
+    {
+      "repo": "DuckyLighting",
+      "title": "DuckyLighting",
+      "blurb": [
+        "A standalone Python project that controls the by-key lighting of a Ducky One2 RGB keyboard.",
+        "<ul>",
+        "<li>Reverse-engineered Ducky’s USB protocol for lighting up the board by individual keys.</li>",
+        "<li>Utilizes a distribution of HIDAPI with a modified version of python-easyhid (C wrapper).</li>",
+        "<li>Completely open-source with robust documentation.</li>",
+        "<li>Utilizes custom wrappers and metaclasses to organize effect layers in a lighting configuration.</li>",
+        "</ul>"
+      ]
+    }
+  ]
+}
