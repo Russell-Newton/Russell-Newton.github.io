@@ -16,16 +16,17 @@
             repoTitle.innerHTML = repo.title;
             repoSection.appendChild(repoTitle);
 
-            let repoDesc = document.createElement("p");
-            repoDesc.innerHTML = repo.blurb.join("\n");
-            repoSection.appendChild(repoDesc);
-
             let repoCard = document.createElement("a");
             repoCard.href = `${baseHref}/${repo.repo}`;
             repoCard.target = "_blank";
             repoCard.rel = "noopener noreferrer";
             repoCard.innerHTML = `<img src="${baseSvgRef}/${repo.title}.svg">`;
+            repoCard.style = "width: 100%"
             repoSection.appendChild(repoCard);
+
+            let repoDesc = document.createElement("p");
+            repoDesc.innerHTML = repo.blurb.join("\n");
+            repoSection.appendChild(repoDesc);
 
             document.getElementById("repos").appendChild(repoSection);
         }
