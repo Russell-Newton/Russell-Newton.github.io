@@ -8675,30 +8675,21 @@ body.is-preload .items.onload-fade-in > * > .inner {
     visibility: hidden;
 }
 
-@media screen and (max-width: 736px) {
-
-    #header {
-        height:      2.75em;
-        line-height: 2.75em;
-    }
-
-    #header nav {
-        top:         0;
-        right:       0;
-        height:      inherit;
-        line-height: inherit;
-    }
-
-    #header nav a {
-        height:      inherit;
-        line-height: inherit;
-    }
-
-}
-
 #page-wrapper {
     -moz-transition:    -moz-filter 0.25s ease;
     -webkit-transition: -webkit-filter 0.25s ease;
     -ms-transition:     -ms-filter 0.25s ease;
     transition:         filter 0.25s ease;
+}
+
+@media screen and (max-width: 736px) {
+    .hide-on-smaller {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .hide-on-smaller {
+        visibility: hidden;
+    }
 }
