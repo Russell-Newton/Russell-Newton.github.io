@@ -44,7 +44,7 @@
       "repo": "7kevin49/CrujientePenguins",
       "title": "Retail Rewards Bidding",
       "blurb": [
-        "An example server/application to showcase auction-style rewards from retail purchases.",
+        "An example server/application to showcase auction-style rewards from retail purchases.<br>",
         "Submitted for NCR's Retail Gamification challenge in HackGT 8.",
         "<ul>",
         "<li>Created a Flask-RESTful API server to interact with user and auction databases.</li>",
