@@ -8604,7 +8604,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
     border-bottom:      0;
     position:           absolute;
     right:              0.25em;
-    top:                0;
+    top:                0.125em;
     font-size:          1em;
 }
 
@@ -8642,30 +8642,6 @@ body.is-preload .items.onload-fade-in > * > .inner {
     border: 0;
 }
 
-#header nav {
-    font-family:    Raleway, Helvetica, sans-serif;
-    font-size:      0.8em;
-    font-weight:    700;
-    height:         3em;
-    letter-spacing: 0.1em;
-    line-height:    3em;
-    position:       absolute;
-    right:          0.7em;
-    text-transform: uppercase;
-    top:            0.7em;
-}
-
-#header nav a {
-    border:  0;
-    display: inline-block;
-    padding: 0 1em;
-}
-
-#header nav a:before {
-    float:       right;
-    margin-left: 0.75em;
-}
-
 #header.alt {
     background-color: transparent;
 }
@@ -8692,4 +8668,92 @@ body.is-preload .items.onload-fade-in > * > .inner {
     .hide-on-smaller {
         visibility: hidden;
     }
+}
+
+.si-icon {
+    height:          2.75em;
+    width:           2.75em;
+    border-radius:   2.75em;
+    box-shadow:      inset 0 0 0 1px var(--dark);
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    position:        relative;
+}
+
+.si-icon.invert {
+    box-shadow: inset 0 0 0 1px var(--light);
+}
+
+.si-icon svg {
+    height: 18pt;
+    width:  18pt;
+    margin: auto;
+    fill: var(--dark);
+}
+
+.si-icon.invert svg {
+    fill: var(--light);
+}
+
+a.si-icon {
+    -moz-transition:    box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -ms-transition:     box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition:         box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a.si-icon svg {
+    -moz-transition:    fill 0.2s ease-in-out;
+    -webkit-transition: fill 0.2s ease-in-out;
+    -ms-transition:     fill 0.2s ease-in-out;
+    transition:         fill 0.2s ease-in-out;
+}
+
+a.si-icon:hover {
+    box-shadow: inset 0 0 0 1px var(--hyperlink);
+}
+
+a.si-icon:active {
+    background-color: rgba(var(--hyperlinkRGB), 0.1);
+}
+
+a.si-icon:hover svg {
+    fill: var(--hyperlink);
+}
+
+@media screen and (max-width: 1680px) {
+
+    .si-icon svg {
+        height: 14pt;
+        width:  14pt;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .si-icon svg {
+        height: 12pt;
+        width:  12pt;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .si-icon svg {
+        height: 11pt;
+        width:  11pt;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .si-icon svg {
+        height: 10pt;
+        width:  10pt;
+    }
+
 }
