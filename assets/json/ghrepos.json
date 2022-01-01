@@ -33,9 +33,12 @@
         "<ul>",
         "<li>Created a custom collision system, an advanced level-generation algorithm, and a game runtime framework.</li>",
         "<li>Implemented a Gradle and Java 9 modules project structure for efficient development, building, and execution across different machines and operating systems.</li>",
-        "</ul>",
-        "<a href=\"https://rnewton.itch.io/not-malware\">Itch.io Page</a>"
-      ]
+        "</ul>"
+      ],
+      "altLink": {
+        "title": "Itch.io Page",
+        "link": "https://rnewton.itch.io/not-malware"
+      }
     }
   ]
 }

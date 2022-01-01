@@ -1,6 +1,6 @@
 (function ($) {
 
-    const baseHref = "https://https://github.com/Russell-Newton";
+    const baseHref = "https://github.com/Russell-Newton";
     const baseSvgRef = "https://gh-card.dev/repos/Russell-Newton"
 
     var $window = $(window),
@@ -24,8 +24,18 @@
             repoSection.appendChild(repoCard);
 
             let repoDesc = document.createElement("p");
+            repoDesc.style.textAlign = "left";
             repoDesc.innerHTML = repo.blurb.join("\n");
             repoSection.appendChild(repoDesc);
+
+            if ("altLink" in repo) {
+                let repoAltLink = document.createElement("a");
+                repoAltLink.href = repo.altLink.link;
+                repoAltLink.target = "_blank";
+                repoAltLink.rel = "noopener noreferrer";
+                repoAltLink.innerHTML = repo.altLink.title;
+                repoSection.appendChild(repoAltLink);
+            }
 
             document.getElementById("repos").appendChild(repoSection);
         }
