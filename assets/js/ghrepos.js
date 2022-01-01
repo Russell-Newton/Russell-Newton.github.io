@@ -1,7 +1,7 @@
 (function ($) {
 
-    const baseHref = "https://github.com/Russell-Newton";
-    const baseSvgRef = "https://gh-card.dev/repos/Russell-Newton"
+    const baseHref = "https://github.com";
+    const baseSvgRef = "https://gh-card.dev/repos"
 
     var $window = $(window),
         $repos = $('#repos');
