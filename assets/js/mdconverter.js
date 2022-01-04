@@ -10,15 +10,20 @@
 
     $("md").each(function () {
         let src = $(this).attr("src");
+        $(this).removeAttr("src");
         let attrs = $(this).prop("attributes");
         let attrsString = "";
         $.each(attrs, function() {
             attrsString += `${this.name}="${this.value}" `;
         });
-        let replacement = `<div ${attrsString}>`;
-        $.get(root + src, data => replacement += mdConverter.makeHtml(data), "text");
-        replacement += "</div>"
 
-        $(this).replaceWith(replacement);
+        let toReplace = $(this);
+        let replacement = `<div ${attrsString}>`;
+        $.get(root + src, function(data) {
+            let converted = mdConverter.makeHtml(data);
+            replacement += converted;
+            replacement += "</div>"
+            toReplace.replaceWith(replacement);
+        }, "text");
     })
 })(jQuery);

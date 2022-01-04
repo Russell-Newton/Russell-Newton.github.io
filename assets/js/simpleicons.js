@@ -8,6 +8,7 @@
 
     $("si-icon").each(function () {
         let slug = $(this).attr("slug");
+        $(this).removeAttr("slug");
         let attrs = $(this).prop("attributes");
         let attrsString = "";
         $.each(attrs, function() {
