@@ -1,12 +1,15 @@
 (function ($) {
 
     const baseHref = "https://github.com";
-    const baseSvgRef = "https://gh-card.dev/repos"
+    const baseSvgRef = "https://gh-card.dev/repos";
+    const baseMDRef = "https://raw.githubusercontent.com/Russell-Newton/Russell-Newton.github.io/main/assets/markdown";
 
     var $window = $(window),
         $repos = $('#repos');
 
     $.getJSON("assets/json/ghrepos.json", function (result) {
+    var showdown = $window.showdown,
+        mdConverter = new showdown.Converter();
         let repoData = result;
 
         for (const repo of repoData.repos) {
@@ -25,7 +28,8 @@
 
             let repoDesc = document.createElement("p");
             repoDesc.style.textAlign = "left";
-            repoDesc.innerHTML = repo.blurb.join("\n");
+            // repoDesc.innerHTML = repo.blurb.join("\n");
+            $.get(`${baseMDRef}/${repo.md}.md`, data => repoDesc.innerHTML = mdConverter.makeHtml(data), "text");
             repoSection.appendChild(repoDesc);
 
             if ("altLink" in repo) {

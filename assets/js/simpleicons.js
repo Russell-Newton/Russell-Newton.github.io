@@ -15,7 +15,6 @@
         //     attrsString += `${this.name}="${this.value}" `;
         // }
         let replacement = `<img src="${baseSrc}/${slug}.svg" onload="SVGInject(this, {copyAttributes: true})" ${attrsString}/>`;
-        console.log(replacement);
         $(this).replaceWith(replacement);
     });
 })(jQuery);

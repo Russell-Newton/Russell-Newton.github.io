@@ -3,38 +3,17 @@
     {
       "repo": "Russell-Newton/StatiCat",
       "title": "StatiCat (Creator)",
-      "blurb": [
-        "A custom Discord bot developed in Nextcord, a Python wrapper of the Discord API.<br>",
-        "Created a custom wrapper for Interaction webhooks, unique from regular commands, including:",
-        "<ul>",
-        "<li>Decorators with at-runtime registration and reloading of Application Commands.</li>",
-        "<li>Automatic selection of subclasses for command parsing and handling via overloaded object creation.</li>",
-        "</ul>"
-      ]
+      "md": "StatiCat"
     },
     {
       "repo": "Russell-Newton/DuckyLighting",
       "title": "DuckyLighting (Creator)",
-      "blurb": [
-        "A standalone Python project that controls the by-key lighting of a Ducky One2 RGB keyboard.",
-        "<ul>",
-        "<li>Reverse-engineered Ducky’s USB protocol for lighting up the board by individual keys.</li>",
-        "<li>Utilized a distribution of HIDAPI with a modified version of python-easyhid (C wrapper).</li>",
-        "<li>Designed a metaclass to organize effect layers in a lighting configuration.</li>",
-        "</ul>"
-      ]
+      "md": "DuckyLighting"
     },
     {
       "repo": "Russell-Newton/NotMalware-Game",
       "title": "Not Malware (Project Lead, Developer)",
-      "blurb": [
-        "Guided a team of four students over the course of six two-week sprints to create an original game in Java for CS 2340: Objects and Design at Georgia Tech.<br>",
-        "Recognized by the professor and other students as one of the best three games out of 114 other games submitted by student teams in Spring 2021.",
-        "<ul>",
-        "<li>Created a custom collision system, an advanced level-generation algorithm, and a game runtime framework.</li>",
-        "<li>Implemented a Gradle and Java 9 modules project structure for efficient development, building, and execution across different machines and operating systems.</li>",
-        "</ul>"
-      ],
+      "md": "NotMalware-Game",
       "altLink": {
         "title": "Itch.io Page",
         "link": "https://rnewton.itch.io/not-malware"
@@ -43,14 +22,7 @@
     {
       "repo": "7kevin49/CrujientePenguins",
       "title": "Retail Rewards Bidding",
-      "blurb": [
-        "An example server/application to showcase auction-style rewards from retail purchases.<br>",
-        "Submitted for NCR's Retail Gamification challenge in HackGT 8.",
-        "<ul>",
-        "<li>Created a Flask-RESTful API server to interact with user and auction databases.</li>",
-        "<li>Implemented login and authentication with JSON web tokens and one-way encryption.</li>",
-        "<li>Created a wrapper for NCR's available APIs, including HMAC authorization token generation.</li>"
-      ],
+      "md": "CrujientePenguins",
       "altLink": {
         "title": "Devpost Page",
         "link": "https://devpost.com/software/retail-rewards-bidding"
