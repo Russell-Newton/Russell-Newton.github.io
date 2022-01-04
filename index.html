@@ -270,6 +270,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         <si-icon slug="devpost" style="fill: #003e54"></si-icon>
                     </a></li>
                 </ul>
+
+                <md src="assets/test.md"></md>
             </div>
             <div class="image">
                 <img src="images/unDraw/my_notifications_azure.svg" alt="" style="object-fit: contain"/>
@@ -296,9 +298,21 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 <script src="assets/js/installed/breakpoints.min.js"></script>
 <script src="assets/js/installed/svg-inject.min.js"></script>
 <script src="assets/js/installed/showdown.min.js"></script>
+<script>
+    var showdown = window.showdown;
+    showdown.setOption("omitExtraWLInCodeBlocks", true);
+    showdown.setOption("ghCompatibleHeaderId", true);
+    showdown.setOption("tables", true);
+    showdown.setOption("tasklists", true);
+    showdown.setOption("requireSpaceBeforeHeadingText", true);
+    showdown.setOption("openLinksInNewWindow", true);
+    showdown.setOption("emoji", true);
+    showdown.setFlavor('github');
+</script>
 
 <script src="assets/js/ghrepos.js"></script>
 <script src="assets/js/simpleicons.js"></script>
+<script src="assets/js/mdconverter.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
