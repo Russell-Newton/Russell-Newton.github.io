@@ -19,11 +19,18 @@
 
         let toReplace = $(this);
         let replacement = `<div ${attrsString}>`;
-        $.get(root + src, function(data) {
-            let converted = mdConverter.makeHtml(data);
+        if (src) {
+            $.get(root + src, function (data) {
+                let converted = mdConverter.makeHtml(data);
+                replacement += converted;
+                replacement += "</div>";
+                toReplace.replaceWith(replacement);
+            }, "text");
+        } else {
+            let converted = mdConverter.makeHtml($(this).html());
             replacement += converted;
-            replacement += "</div>"
+            replacement += "</div>";
             toReplace.replaceWith(replacement);
-        }, "text");
+        }
     })
 })(jQuery);
