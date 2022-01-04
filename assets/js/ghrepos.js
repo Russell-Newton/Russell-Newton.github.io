@@ -1,3 +1,33 @@
+/*
+    An auto-running script to populate the projects section according to ghrepos.json.
+
+    ghrepos.json is structured like:
+    {
+        "repos": [
+            {
+                ...Repository data...
+            },
+            {
+                ...Respository data...
+            },
+            ...
+        ]
+    }
+
+    Repository items are populated as follows:
+        The title shown above the repository card is set by "title"
+        The repository title set by "repo" is used to acquire the repository card and to provide a link to the repository.
+        The description shown under the card is converted from markdown into HTML. The markdown is saved in a file
+            with the title set by "md". The .md extension will be added and shouldn't be included.
+        There is an option to include an additional, centered link at the bottom of the item by including the following:
+            "altLink": {
+                "title": "The text the hyperlink should display",
+                "link": "The address it should point to"
+            }
+
+    Repository items are added in the order they appear in the json file.
+*/
+
 (function ($) {
 
     const baseHref = "https://github.com";
