@@ -1,28 +1,14 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url(variables.css);
+@import url(header.css);
+@import url(si-icon.css);
 
 /*
 	Adapted from Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-:root {
-    --light:         #dde1e3;
-    --bold:          #e55a2d;
-    --complement:    #48677d;
-    --neutral:       #959595;
-    --dark:          #1f1f1f;
-    --midlight:      #c5d4dc;
-    --hyperlink:     #4786e6;
-    --lightRGB:      221, 225, 227;
-    --boldRGB:       229, 90, 45;
-    --complementRGB: 72, 103, 125;
-    --neutralRGB:    149, 149, 149;
-    --darkRGB:       31, 31, 31;
-    --midlightRGB:   197, 212, 220;
-    --hyperlinkRGB:  71, 134, 230;
-}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -8566,91 +8552,6 @@ body.is-preload .items.onload-fade-in > * > .inner {
     box-shadow: none !important;
 }
 
-#header {
-    -moz-transition:    background-color 0.2s ease-in-out;
-    -webkit-transition: background-color 0.2s ease-in-out;
-    -ms-transition:     background-color 0.2s ease-in-out;
-    transition:         background-color 0.2s ease-in-out;
-    background-color:   rgba(var(--darkRGB), 0.85);
-    height:             3.5em;
-    left:               0;
-    line-height:        3.5em;
-    padding:            0.75em 1.25em;
-    position:           fixed;
-    top:                0;
-    width:              100%;
-    z-index:            10000;
-    vertical-align:     middle;
-}
-
-#header h1 {
-    -moz-transition:    opacity 0.2s ease-in-out, visibility 0.2s;
-    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-    -ms-transition:     opacity 0.2s ease-in-out, visibility 0.2s;
-    transition:         opacity 0.2s ease-in-out, visibility 0.2s;
-    border-bottom:      0;
-    font-size:          1.5em;
-    margin-bottom:      0;
-    opacity:            1;
-    visibility:         visible;
-    color:              var(--light);
-}
-
-#header ul {
-    -moz-transition:    opacity 0.2s ease-in-out, visibility 0.2s;
-    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-    -ms-transition:     opacity 0.2s ease-in-out, visibility 0.2s;
-    transition:         opacity 0.2s ease-in-out, visibility 0.2s;
-    border-bottom:      0;
-    position:           absolute;
-    right:              0.25em;
-    top:                0.125em;
-    font-size:          1em;
-}
-
-#header ul li {
-    padding-right: 0.5em;
-}
-
-#header ul li .icon:before {
-    color: var(--light);
-}
-
-#header ul li .icon.style2:before {
-    border-color: var(--light);
-    box-shadow:   inset 0 0 0 1px var(--light)
-}
-
-#header ul li a.icon:hover:before {
-    color: var(--hyperlink);
-}
-
-#header ul li a.icon.style2:hover:before {
-    box-shadow: inset 0 0 0 1px var(--hyperlink);
-}
-
-#header ul li a.icon:active:before {
-    color: var(--hyperlink);
-}
-
-#header ul li a.icon.style2:active:before {
-    background-color: rgba(var(--hyperlinkRGB), 0.1);
-    box-shadow:       inset 0 0 0 1px var(--hyperlink);
-}
-
-#header h1 a {
-    border: 0;
-}
-
-#header.alt {
-    background-color: transparent;
-}
-
-#header.alt h1, #header.alt ul {
-    opacity:    0;
-    visibility: hidden;
-}
-
 #page-wrapper {
     -moz-transition:    -moz-filter 0.25s ease;
     -webkit-transition: -webkit-filter 0.25s ease;
@@ -8658,112 +8559,3 @@ body.is-preload .items.onload-fade-in > * > .inner {
     transition:         filter 0.25s ease;
 }
 
-@media screen and (max-width: 736px) {
-    .hide-on-smaller {
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .hide-on-smaller {
-        visibility: hidden;
-    }
-}
-
-.si-icon {
-    height:          auto;
-    width:           auto;
-    display:         flex;
-    justify-content: center;
-    align-items:     center;
-    position:        relative;
-}
-
-.si-icon.alt {
-    height:        2.75em;
-    width:         2.75em;
-    border-radius: 2.75em;
-    box-shadow:    inset 0 0 0 1px var(--dark);
-}
-
-.si-icon.alt.invert {
-    box-shadow: inset 0 0 0 1px var(--light);
-}
-
-.si-icon svg {
-    height: 18pt;
-    width:  18pt;
-    margin: auto;
-    fill:   var(--dark);
-}
-
-.si-icon.major:not(.alt) svg {
-    height: 2rem;
-    width: 2rem;
-}
-
-.si-icon.invert svg {
-    fill: var(--light);
-}
-
-a.si-icon {
-    -moz-transition:    box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    -ms-transition:     box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    transition:         box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-a.si-icon svg {
-    -moz-transition:    fill 0.2s ease-in-out;
-    -webkit-transition: fill 0.2s ease-in-out;
-    -ms-transition:     fill 0.2s ease-in-out;
-    transition:         fill 0.2s ease-in-out;
-}
-
-a.si-icon.alt:hover {
-    box-shadow: inset 0 0 0 1px var(--hyperlink);
-}
-
-a.si-icon.alt:active {
-    background-color: rgba(var(--hyperlinkRGB), 0.1);
-}
-
-a.si-icon:hover svg {
-    fill: var(--hyperlink);
-}
-
-@media screen and (max-width: 1680px) {
-
-    .si-icon svg {
-        height: 14pt;
-        width:  14pt;
-    }
-
-}
-
-@media screen and (max-width: 1280px) {
-
-    .si-icon svg {
-        height: 12pt;
-        width:  12pt;
-    }
-
-}
-
-@media screen and (max-width: 736px) {
-
-    .si-icon svg {
-        height: 11pt;
-        width:  11pt;
-    }
-
-}
-
-@media screen and (max-width: 360px) {
-
-    .si-icon svg {
-        height: 10pt;
-        width:  10pt;
-    }
-
-}

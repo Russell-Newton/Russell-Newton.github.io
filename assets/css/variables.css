@@ -1,0 +1,25 @@
+:root {
+    /* Colors */
+    --light:         #dde1e3;
+    --bold:          #e55a2d;
+    --complement:    #48677d;
+    --neutral:       #959595;
+    --dark:          #1f1f1f;
+    --midlight:      #c5d4dc;
+    --hyperlink:     #4786e6;
+    --lightRGB:      221, 225, 227;
+    --boldRGB:       229, 90, 45;
+    --complementRGB: 72, 103, 125;
+    --neutralRGB:    149, 149, 149;
+    --darkRGB:       31, 31, 31;
+    --midlightRGB:   197, 212, 220;
+    --hyperlinkRGB:  71, 134, 230;
+
+    /* Breakpoints */
+    --xlarge: 1680px;
+    --large: 1280px;
+    --medium: 980px;
+    --small: 736px;
+    --xsmall: 480px;
+    --xxsmall: 360px;
+}

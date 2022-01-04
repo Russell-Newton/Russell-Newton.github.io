@@ -1,0 +1,96 @@
+#header {
+    -moz-transition:    background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition:     background-color 0.2s ease-in-out;
+    transition:         background-color 0.2s ease-in-out;
+    background-color:   rgba(var(--darkRGB), 0.85);
+    height:             3.5em;
+    left:               0;
+    line-height:        3.5em;
+    padding:            0.75em 1.25em;
+    position:           fixed;
+    top:                0;
+    width:              100%;
+    z-index:            10000;
+    vertical-align:     middle;
+}
+
+#header h1 {
+    -moz-transition:    opacity 0.2s ease-in-out, visibility 0.2s;
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+    -ms-transition:     opacity 0.2s ease-in-out, visibility 0.2s;
+    transition:         opacity 0.2s ease-in-out, visibility 0.2s;
+    border-bottom:      0;
+    font-size:          1.5em;
+    margin-bottom:      0;
+    opacity:            1;
+    visibility:         visible;
+    color:              var(--light);
+}
+
+#header ul {
+    -moz-transition:    opacity 0.2s ease-in-out, visibility 0.2s;
+    -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+    -ms-transition:     opacity 0.2s ease-in-out, visibility 0.2s;
+    transition:         opacity 0.2s ease-in-out, visibility 0.2s;
+    border-bottom:      0;
+    position:           absolute;
+    right:              0.25em;
+    top:                0.125em;
+    font-size:          1em;
+}
+
+#header ul li {
+    padding-right: 0.5em;
+}
+
+#header ul li .icon:before {
+    color: var(--light);
+}
+
+#header ul li .icon.style2:before {
+    border-color: var(--light);
+    box-shadow:   inset 0 0 0 1px var(--light)
+}
+
+#header ul li a.icon:hover:before {
+    color: var(--hyperlink);
+}
+
+#header ul li a.icon.style2:hover:before {
+    box-shadow: inset 0 0 0 1px var(--hyperlink);
+}
+
+#header ul li a.icon:active:before {
+    color: var(--hyperlink);
+}
+
+#header ul li a.icon.style2:active:before {
+    background-color: rgba(var(--hyperlinkRGB), 0.1);
+    box-shadow:       inset 0 0 0 1px var(--hyperlink);
+}
+
+#header h1 a {
+    border: 0;
+}
+
+#header.alt {
+    background-color: transparent;
+}
+
+#header.alt h1, #header.alt ul {
+    opacity:    0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: var(--xsmall)) {
+    .hide-on-smaller {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: var(--xxsmall)) {
+    .hide-on-smaller {
+        visibility: hidden;
+    }
+}

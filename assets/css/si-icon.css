@@ -1,0 +1,97 @@
+.si-icon {
+    height:          auto;
+    width:           auto;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    position:        relative;
+}
+
+.si-icon.alt {
+    height:        2.75em;
+    width:         2.75em;
+    border-radius: 2.75em;
+    box-shadow:    inset 0 0 0 1px var(--dark);
+}
+
+.si-icon.alt.invert {
+    box-shadow: inset 0 0 0 1px var(--light);
+}
+
+.si-icon svg {
+    height: 18pt;
+    width:  18pt;
+    margin: auto;
+    fill:   var(--dark);
+}
+
+.si-icon.major:not(.alt) svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.si-icon.invert svg {
+    fill: var(--light);
+}
+
+a.si-icon {
+    -moz-transition:    box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -ms-transition:     box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition:         box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a.si-icon svg {
+    -moz-transition:    fill 0.2s ease-in-out;
+    -webkit-transition: fill 0.2s ease-in-out;
+    -ms-transition:     fill 0.2s ease-in-out;
+    transition:         fill 0.2s ease-in-out;
+}
+
+a.si-icon.alt:hover {
+    box-shadow: inset 0 0 0 1px var(--hyperlink);
+}
+
+a.si-icon.alt:active {
+    background-color: rgba(var(--hyperlinkRGB), 0.1);
+}
+
+a.si-icon:hover svg {
+    fill: var(--hyperlink);
+}
+
+@media screen and (max-width: 1680px) {
+
+    .si-icon svg {
+        height: 14pt;
+        width:  14pt;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .si-icon svg {
+        height: 12pt;
+        width:  12pt;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .si-icon svg {
+        height: 11pt;
+        width:  11pt;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .si-icon svg {
+        height: 10pt;
+        width:  10pt;
+    }
+
+}
