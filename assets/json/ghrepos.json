@@ -3,17 +3,17 @@
     {
       "repo": "Russell-Newton/StatiCat",
       "title": "StatiCat (Creator)",
-      "md": "StatiCat"
+      "md": "ghrepos/StatiCat"
     },
     {
       "repo": "Russell-Newton/DuckyLighting",
       "title": "DuckyLighting (Creator)",
-      "md": "DuckyLighting"
+      "md": "ghrepos/DuckyLighting"
     },
     {
       "repo": "Russell-Newton/NotMalware-Game",
       "title": "Not Malware (Project Lead, Developer)",
-      "md": "NotMalware-Game",
+      "md": "ghrepos/NotMalware-Game",
       "altLink": {
         "title": "Itch.io Page",
         "link": "https://rnewton.itch.io/not-malware"
@@ -22,7 +22,7 @@
     {
       "repo": "7kevin49/CrujientePenguins",
       "title": "Retail Rewards Bidding",
-      "md": "CrujientePenguins",
+      "md": "ghrepos/CrujientePenguins",
       "altLink": {
         "title": "Devpost Page",
         "link": "https://devpost.com/software/retail-rewards-bidding"
