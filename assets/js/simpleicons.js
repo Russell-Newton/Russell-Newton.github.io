@@ -1,3 +1,8 @@
+/*
+    An auto-running script to convert all <si-icon slug="..." /> elements into images to be converted into svg elements
+    by SVGInject.
+*/
+
 (function ($) {
     const baseSrc = "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons";
 
@@ -8,12 +13,6 @@
         $.each(attrs, function() {
             attrsString += `${this.name}="${this.value}" `;
         })
-        // [...$(this).attributes].forEach(attr => {
-        //     attrsString += `${attr.nodeName}="${attr.nodeValue}" `
-        // })
-        // for (let attr in attrs) {
-        //     attrsString += `${this.name}="${this.value}" `;
-        // }
         let replacement = `<img src="${baseSrc}/${slug}.svg" onload="SVGInject(this, {copyAttributes: true})" ${attrsString}/>`;
         $(this).replaceWith(replacement);
     });
