@@ -8,7 +8,7 @@
         $repos = $('#repos');
 
     $.getJSON("assets/json/ghrepos.json", function (result) {
-    var showdown = $window.showdown,
+    var showdown = window.showdown,
         mdConverter = new showdown.Converter();
         let repoData = result;
 
