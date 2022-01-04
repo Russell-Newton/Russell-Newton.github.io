@@ -33,7 +33,7 @@
 
     const baseHref = "https://github.com";
     const baseSvgRef = "https://gh-card.dev/repos";
-    const baseMDRef = "https://raw.githubusercontent.com/Russell-Newton/Russell-Newton.github.io/main/assets/markdown";
+    const baseMDRef = "assets/markdown";
 
     var $window = $(window),
         $repos = $('#repos');
