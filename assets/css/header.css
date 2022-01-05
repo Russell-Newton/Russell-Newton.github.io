@@ -83,13 +83,19 @@
     visibility: hidden;
 }
 
-@media screen and (max-width: var(--xsmall)) {
+@media screen and (max-width: 736px) {
     .hide-on-smaller {
         visibility: hidden;
     }
 }
 
-@media screen and (max-width: var(--xxsmall)) {
+@media screen and (max-width: 480px) {
+    .hide-on-smaller {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 360px) {
     .hide-on-smaller {
         visibility: hidden;
     }
