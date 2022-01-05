@@ -4970,10 +4970,10 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 @media screen and (max-width: 736px) and (orientation: portrait) {
 
     .spotlight.style1 {
-        -moz-flex-direction:    column-reverse;
-        -webkit-flex-direction: column-reverse;
-        -ms-flex-direction:     column-reverse;
-        flex-direction:         column-reverse;
+        -moz-flex-direction:    column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction:     column;
+        flex-direction:         column;
         text-align:             center !important;
     }
 
